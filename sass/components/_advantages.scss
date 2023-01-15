@@ -1,0 +1,32 @@
+.advantages {
+  padding-top: 94px;
+
+  &__icons {
+    display: flex;
+    gap: 30px;
+    padding-bottom: 30px;
+  }
+
+  &__icon-rectangle {
+    background-color: $col-bg-alt-lightgray;
+    border-radius: 4px;
+    padding: 25px 100px;
+  }
+
+  &__list {
+    display: flex;
+    gap: 30px;
+  }
+
+  &__term {
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+
+  &__description {
+    color: $col-text-gray;
+    letter-spacing: 0.03em;
+    line-height: 1.71em;
+  }
+}

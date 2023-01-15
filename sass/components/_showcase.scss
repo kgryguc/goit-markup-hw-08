@@ -1,0 +1,23 @@
+.showcase {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+
+  &__item {
+    position: relative;
+    font-size: 0;
+  }
+  &__description {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: $col-bg-default-alfa88;
+    color: $col-text-white;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 27px 0;
+  }
+}

@@ -1,0 +1,56 @@
+.header {
+  border-bottom: 1px solid $col-section-line;
+  padding: 25px 0;
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__contacts {
+    display: flex;
+    gap: 50px;
+  }
+
+  &__contact {
+    display: flex;
+    align-items: center;
+    color: $col-text-gray;
+    font-weight: 500;
+    text-decoration: none;
+    gap: 10px;
+  }
+}
+
+.nav-bar {
+  display: flex;
+  align-items: center;
+  gap: 93px;
+
+  &__links {
+    display: flex;
+    gap: 46px;
+  }
+
+  &__link {
+    color: $col-text-default;
+    font-weight: 500;
+    text-decoration: none;
+
+    &--current {
+      color: $col-brand;
+      position: relative;
+
+      &:after {
+        content: '';
+        display: block;
+        position: absolute;
+        width: 100%;
+        border-bottom: 4px solid $col-brand;
+        border-radius: 2px;
+        top: 2.9375rem;
+      }
+    }
+  }
+}

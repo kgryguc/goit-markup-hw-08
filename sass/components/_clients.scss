@@ -1,0 +1,25 @@
+.our-clients {
+  background-color: $col-bg-alt-white;
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__item {
+    font-size: 0;
+    padding: 17.71px 32px 14.25px;
+    color: $col-icon-fill;
+    border-color: currentColor;
+    border: 1px solid currentColor;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: color $transition-duration-timingf-default;
+
+    &:hover,
+    &:focus,
+    &:active {
+      color: $col-brand;
+    }
+  }
+}

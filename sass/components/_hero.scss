@@ -1,0 +1,23 @@
+.hero {
+  padding: 200px 0;
+  background: linear-gradient($col-bg-default-alfa40, $col-bg-default-alfa40),
+    url('../images/hero-background.jpg') no-repeat center;
+  background-color: $col-bg-default;
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+  }
+  &__header {
+    color: $col-text-white;
+    font-size: 44px;
+    font-weight: 900;
+    letter-spacing: 0.06em;
+    line-height: 1.36em;
+    max-width: 696px;
+    text-transform: uppercase;
+    text-align: center;
+  }
+}
