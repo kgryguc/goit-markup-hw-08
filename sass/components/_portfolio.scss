@@ -1,16 +1,18 @@
 .filter {
-  display: flex;
-  justify-content: center;
-  gap: 8px;
+  display: grid;
+  grid-template-columns: 0.8046875fr 1fr 1.5859375fr;
+  row-gap: 15px;
+  column-gap: 8px;
   padding-bottom: 50px;
 
   &__button {
     background-color: $col-bg-alt-lightgray;
     color: $col-text-darkgray;
+    width: 100%;
     cursor: pointer;
     font-weight: 500;
     line-height: 1.63em;
-    padding: 6px 22px;
+    padding: 6px;
     box-shadow: none;
     letter-spacing: 0.03em;
     transition: background-color $transition-duration-timingf-default,
