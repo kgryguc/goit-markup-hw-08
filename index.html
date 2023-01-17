@@ -62,6 +62,12 @@
             +48 111 111 111</a
           >
         </div>
+
+        <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+          <svg width="24" height="24">
+            <use href="images/icons.svg#icon-mobile-menu-open"></use>
+          </svg>
+        </button>
       </div>
     </header>
 
@@ -546,6 +552,58 @@
         </div>
       </div>
     </footer>
+
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+        <svg width="40" height="40">
+          <use href="images/icons.svg#icon-mobile-menu-close"></use>
+        </svg>
+      </button>
+
+      <div class="mobile-nav-window"></div>
+      <ul class="mobile-nav-window__links list">
+        <li class="mobile-nav-window__item">
+          <a class="mobile-nav-window__link" href="index.html">Agencja</a>
+        </li>
+        <li class="mobile-nav-window__item">
+          <a class="mobile-nav-window__link" href="portfolio.html">Portfolio</a>
+        </li>
+        <li class="mobile-nav-window__item">
+          <a class="mobile-nav-window__link" href="#">Kontakt</a>
+        </li>
+      </ul>
+      <ul class="list">
+        <li class="mobile-nav-window__contact">
+          <a class="mobile-nav-window__tel" href="tel:+48111111111">+48 111 111 111</a>
+        </li>
+        <li class="mobile-nav-window__contact">
+          <a class="mobile-nav-window__mail" href="mailto:info@example.com">info@devstudio.com</a>
+        </li>
+      </ul>
+
+      <ul class="mobile-nav-window__socials list">
+        <li class="mobile-nav-window__social-item">
+          <a class="mobile-nav-window__social-link" href="#">Instagram</a>
+        </li>
+        <li class="mobile-nav-window__social-item">
+          <a class="mobile-nav-window__social-link" href="#">Twitter</a>
+        </li>
+        <li class="mobile-nav-window__social-item">
+          <a class="mobile-nav-window__social-link" href="#">Facebook</a>
+        </li>
+        <li class="mobile-nav-window__social-item">
+          <a class="mobile-nav-window__social-link" href="#">LinkedIn</a>
+        </li>
+      </ul>
+    </div>
+
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
