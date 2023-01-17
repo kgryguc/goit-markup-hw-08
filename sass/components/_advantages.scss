@@ -1,31 +1,35 @@
 .advantages {
   padding-top: 94px;
 
-  &__icons {
+  &__display {
     display: flex;
+    flex-direction: column;
     gap: 30px;
-    padding-bottom: 30px;
+    padding-bottom: 60px;
   }
 
-  &__icon-rectangle {
+  &__icon-wrapper {
+    text-align: center;
     background-color: $col-bg-alt-lightgray;
     border-radius: 4px;
-    padding: 25px 100px;
-  }
-
-  &__list {
-    display: flex;
-    gap: 30px;
+    padding: 25px 0;
+    margin-bottom: 30px;
   }
 
   &__term {
+    color: $col-text-darkgray;
+    font-size: 14px;
     font-weight: 700;
     text-transform: uppercase;
     margin-bottom: 10px;
+    line-height: 1.14em;
+    text-align: center;
+    letter-spacing: 0.03em;
   }
 
   &__description {
     color: $col-text-gray;
+    font-size: 14px;
     letter-spacing: 0.03em;
     line-height: 1.71em;
   }
