@@ -19,6 +19,7 @@
     margin-bottom: 8px;
     font-size: 14px;
     letter-spacing: 0.03em;
+    line-height: 1.71em;
 
     &--location {
       color: $col-text-white;
@@ -33,6 +34,9 @@
     &--tel {
       color: $col-text-white-alfa60;
       text-decoration: none;
+    }
+
+    &:last-child {
       margin-bottom: 0;
     }
   }

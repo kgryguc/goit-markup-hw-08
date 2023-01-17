@@ -5,10 +5,11 @@
     display: flex;
     gap: 30px;
     flex-wrap: wrap;
+    justify-content: center;
   }
 
   &__member {
-    flex-basis: calc((100% - 90px) / 3);
+    flex-basis: calc((100% - 90px) / 2);
   }
   &__card {
     background-color: $col-bg-alt-white;
