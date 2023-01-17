@@ -5,6 +5,9 @@
   &__wrapper {
     display: flex;
     justify-content: space-between;
+    flex-direction: column;
+    text-align: center;
+    gap: 60px;
   }
 
   &__address {
@@ -13,7 +16,9 @@
 
   &__contact-item {
     font-style: normal;
-    margin-bottom: 9px;
+    margin-bottom: 8px;
+    font-size: 14px;
+    letter-spacing: 0.03em;
 
     &--location {
       color: $col-text-white;
@@ -28,22 +33,25 @@
     &--tel {
       color: $col-text-white-alfa60;
       text-decoration: none;
+      margin-bottom: 0;
     }
   }
 
   &__section {
     color: $col-text-white;
   }
+
   &__section-title {
-    padding-top: 12px;
     margin-bottom: 20px;
     text-transform: uppercase;
     font-weight: 700;
     font-size: 14px;
+    letter-spacing: 0.03em;
   }
   &__social-links {
     display: flex;
     gap: 10px;
+    justify-content: center;
   }
   &__social-link {
     font-size: 0;
@@ -63,11 +71,13 @@
 
   &__newsletter-form {
     display: flex;
-    gap: 12px;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
   }
 
   &__newsletter-input {
-    width: 358px;
+    width: 100%;
     height: 50px;
     position: relative;
     background-color: $col-transparent;
