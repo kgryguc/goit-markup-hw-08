@@ -1,7 +1,10 @@
 .hero {
-  background: linear-gradient($col-bg-default-alfa40, $col-bg-default-alfa40),
-    url('../images/hero-background-480.jpg') no-repeat center;
+  background-image: linear-gradient($col-bg-default-alfa40, $col-bg-default-alfa40),
+    url('../images/hero-background-480.jpg');
   background-color: $col-bg-default;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 
   &__wrapper {
     display: flex;
@@ -10,22 +13,50 @@
     gap: 30px;
   }
   &__header {
+    width: 365px;
     color: $col-text-white;
     font-size: 26px;
     font-weight: 900;
     letter-spacing: 0.06em;
     line-height: 1.62em;
-    max-width: 365px;
+    max-width: 696px;
     text-transform: uppercase;
     text-align: center;
   }
 }
 
-@media screen and (min-device-pixel-ratio: 2),
-  screen and (min-resolution: 192dpi),
-  screen and (min-resolution: 2dppx) {
-  .card {
-    background: linear-gradient($col-bg-default-alfa40, $col-bg-default-alfa40),
-      url('../images/hero-background-960.jpg') no-repeat center;
+@media screen and (min-width: 768px) {
+  .hero {
+    background-image: linear-gradient($col-bg-default-alfa40, $col-bg-default-alfa40),
+      url('../images/hero-background-768.jpg');
+  }
+}
+
+@media (min-width: 768px) and (min-device-pixel-ratio: 2),
+  (min-width: 768px) and (min-resolution: 192dpi),
+  (min-width: 768px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient($col-bg-default-alfa40, $col-bg-default-alfa40),
+      url('../images/hero-background-1536.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero {
+    background-image: linear-gradient($col-bg-default-alfa40, $col-bg-default-alfa40),
+      url('../images/hero-background-1600.jpg');
+  }
+}
+
+@media (min-width: 1200px) and (min-device-pixel-ratio: 2),
+  (min-width: 1200px) and (min-resolution: 192dpi),
+  (min-width: 1200px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient($col-bg-default-alfa40, $col-bg-default-alfa40),
+      url('../images/hero-background-3200.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
   }
 }

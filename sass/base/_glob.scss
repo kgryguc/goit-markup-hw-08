@@ -44,6 +44,11 @@ body {
   padding-top: 94px;
   padding-bottom: 94px;
 
+  &.hero {
+    padding-top: 118px;
+    padding-bottom: 118px;
+  }
+
   &__title {
     font-size: 36px;
     font-weight: 700;
