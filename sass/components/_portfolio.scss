@@ -3,17 +3,10 @@
   grid-template-columns: 0.8046875fr 1fr 1.5859375fr;
   row-gap: 15px;
   column-gap: 8px;
-  padding-bottom: 50px;
-}
-
-.portfolio {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
+  margin-bottom: 40px;
 }
 
 .project {
-  flex-basis: calc((100% - 60px) / 3);
   cursor: pointer;
   transition: box-shadow $transition-duration-timingf-default;
 
@@ -67,5 +60,18 @@
     color: $col-text-gray;
     line-height: 1.875rem;
     letter-spacing: 0.03rem;
+  }
+}
+
+// TABLET STYLES
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .filter {
+    display: flex;
+    justify-content: space-between;
+
+    &__item {
+      flex-grow: 1;
+    }
   }
 }
