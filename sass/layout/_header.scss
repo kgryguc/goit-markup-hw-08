@@ -1,8 +1,9 @@
 .header {
   border-bottom: 1px solid $col-section-line;
-  padding: 25px 0;
+  padding: 15px 0;
 
   &__wrapper {
+    position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -65,7 +66,7 @@
   }
 }
 
-@media (max-width: 767px) {
+@media screen and (max-width: 767px) {
   .header {
     &__contacts {
       display: none;
@@ -75,6 +76,54 @@
   .nav-bar {
     &__menu {
       display: none;
+    }
+  }
+}
+
+// TABLET STYLES
+@media screen and (min-width: 768px) {
+  .js-open-menu {
+    display: none;
+  }
+
+  .header {
+    padding: 20px 0;
+
+    &__wrapper {
+      justify-content: normal;
+      gap: 80px;
+    }
+
+    &__contacts {
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    &__contact {
+      font-size: 12px;
+    }
+  }
+}
+
+.nav-bar {
+  gap: 83px;
+
+  &__links {
+    gap: 60px;
+  }
+
+  &__link {
+    font-size: 14px;
+
+    &--current {
+      &:after {
+        top: 45px;
+      }
+    }
+
+    &:hover,
+    &:focus {
+      @include hover-focus($col-brand);
     }
   }
 }

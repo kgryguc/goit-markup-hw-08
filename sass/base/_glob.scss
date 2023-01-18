@@ -24,7 +24,7 @@ body {
 
 .logo {
   font-family: Raleway, sans-serif;
-  font-size: 26px;
+  font-size: 24px;
   font-weight: 700;
   letter-spacing: 0.03em;
   text-decoration: none;
@@ -56,4 +56,34 @@ body {
   transition: color $transition-duration-timingf-default;
 
   color: $color;
+}
+
+// TABLET STYLES
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+
+  .icon {
+    &--envelope {
+      width: 14px;
+      height: 10px;
+    }
+    &--smartphone {
+      height: 14px;
+    }
+  }
+}
+
+// DESKTOP STYLES
+
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+  }
+
+  .logo {
+    font-size: 26px;
+  }
 }
