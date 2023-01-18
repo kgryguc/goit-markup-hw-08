@@ -29,18 +29,27 @@
     &--mail {
       color: $col-text-white-alfa60;
       text-decoration: underline;
+
+      &:hover,
+      &:focus {
+        @include hover-focus($col-text-white);
+      }
     }
 
     &--tel {
       color: $col-text-white-alfa60;
       text-decoration: none;
-    }
 
-    &:last-child {
-      margin-bottom: 0;
+      &:hover,
+      &:focus {
+        @include hover-focus($col-text-white);
+      }
     }
   }
 
+  &:last-child {
+    margin-bottom: 0;
+  }
   &__section {
     color: $col-text-white;
   }

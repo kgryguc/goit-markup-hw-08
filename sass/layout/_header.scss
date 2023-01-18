@@ -20,6 +20,11 @@
     font-weight: 500;
     text-decoration: none;
     gap: 10px;
+
+    &:hover,
+    &:focus {
+      @include hover-focus($col-brand);
+    }
   }
 }
 
@@ -51,6 +56,11 @@
         border-radius: 2px;
         top: 2.9375rem;
       }
+    }
+
+    &:hover,
+    &:focus {
+      @include hover-focus($col-brand);
     }
   }
 }

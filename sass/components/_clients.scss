@@ -21,9 +21,8 @@
     transition: color $transition-duration-timingf-default;
 
     &:hover,
-    &:focus,
-    &:active {
-      color: $col-brand;
+    &:focus {
+      @include hover-focus($col-brand);
     }
   }
 }

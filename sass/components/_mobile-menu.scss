@@ -2,6 +2,11 @@
   background: none;
   border: none;
   cursor: pointer;
+
+  &:hover,
+  &:focus {
+    @include hover-focus($col-brand);
+  }
 }
 
 .js-close-menu {
@@ -45,6 +50,10 @@
   &__link {
     text-decoration: none;
     color: $col-text-darkgray;
+    &:hover,
+    &:focus {
+      @include hover-focus($col-brand);
+    }
   }
 
   &__contact {
