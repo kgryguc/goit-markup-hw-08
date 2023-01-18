@@ -60,3 +60,16 @@
     }
   }
 }
+
+// DESKTOP STYLES
+
+@media (min-width: 1200px) {
+  .team {
+    background-color: $col-bg-alt-lightgray;
+
+    &__list {
+      flex-wrap: nowrap;
+      justify-content: flex-start;
+    }
+  }
+}

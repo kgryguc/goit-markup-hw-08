@@ -23,7 +23,7 @@
     text-transform: uppercase;
     margin-bottom: 10px;
     line-height: 1.14em;
-    text-align: center;
+    text-align: left;
     letter-spacing: 0.03em;
   }
 
@@ -39,6 +39,8 @@
 
 @media screen and (min-width: 768px) {
   .advantages {
+    padding-top: 94px;
+
     &__display {
       flex-direction: row;
       flex-wrap: wrap;
@@ -48,30 +50,22 @@
     &__item {
       flex-basis: calc((100% - 30px) / 2);
     }
+  }
+}
 
-    &__icon-wrapper {
-      text-align: center;
-      background-color: $col-bg-alt-lightgray;
-      border-radius: 4px;
-      padding: 25px 0;
+// DESKTOP STYLES
+@media screen and (min-width: 1200px) {
+  .advantages {
+    &__item {
+      flex-basis: calc((100% - 90px) / 4);
     }
 
     &__term {
-      color: $col-text-darkgray;
-      font-size: 14px;
-      font-weight: 700;
-      text-transform: uppercase;
-      margin-bottom: 10px;
-      line-height: 1.14em;
-      text-align: center;
-      letter-spacing: 0.03em;
+      font-size: 16px;
     }
 
     &__description {
-      color: $col-text-gray;
-      font-size: 14px;
-      letter-spacing: 0.03em;
-      line-height: 1.71em;
+      font-size: 16px;
     }
   }
 }

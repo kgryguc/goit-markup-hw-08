@@ -127,3 +127,41 @@
     }
   }
 }
+
+// DESKTOP STYLES
+
+@media screen and (min-width: 1200px) {
+  .header {
+    padding: 25px 0;
+
+    &__wrapper {
+      justify-content: space-between;
+    }
+
+    &__contacts {
+      flex-direction: row;
+      gap: 50px;
+    }
+    &__contact {
+      font-size: 16px;
+    }
+  }
+
+  .nav-bar {
+    gap: 93px;
+
+    &__links {
+      gap: 46px;
+    }
+
+    &__link {
+      font-size: 16px;
+
+      &--current {
+        &:after {
+          top: 2.9375rem;
+        }
+      }
+    }
+  }
+}

@@ -8,7 +8,6 @@
     justify-content: space-between;
     flex-direction: column;
     text-align: center;
-    gap: 60px;
   }
 
   &__address {
@@ -111,17 +110,60 @@
   }
 }
 
+// TABLET STYLES
+
 @media (min-width: 768px) {
   .footer {
     &__contact-section {
       flex-direction: row;
-      justify-content: space-between;
       text-align: center;
       gap: 144px;
     }
 
     &__newsletter-input {
       width: 450px;
+    }
+  }
+}
+
+// DESKTOP STYLES
+
+@media (min-width: 1200px) {
+  .footer {
+    &__wrapper {
+      text-align: left;
+      justify-content: space-between;
+      flex-direction: row;
+    }
+
+    &__section-title {
+      padding-top: 12px;
+    }
+
+    &__contact-section {
+      gap: 70px;
+      text-align: left;
+    }
+
+    &__contact-item {
+      margin-bottom: 9px;
+      font-size: 16px;
+      line-height: normal;
+      letter-spacing: normal;
+    }
+
+    &__social-links {
+      justify-content: flex-start;
+    }
+
+    &__newsletter-form {
+      flex-direction: row;
+      gap: 12px;
+      align-items: flex-start;
+    }
+
+    &__newsletter-input {
+      width: 358px;
     }
   }
 }
