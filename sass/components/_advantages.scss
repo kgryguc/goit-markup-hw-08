@@ -1,5 +1,5 @@
 .advantages {
-  padding-top: 94px;
+  padding-top: 60px;
 
   &__display {
     display: flex;
@@ -32,5 +32,46 @@
     font-size: 14px;
     letter-spacing: 0.03em;
     line-height: 1.71em;
+  }
+}
+
+// TABLET STYLES
+
+@media screen and (min-width: 768px) {
+  .advantages {
+    &__display {
+      flex-direction: row;
+      flex-wrap: wrap;
+      padding-bottom: 45px;
+    }
+
+    &__item {
+      flex-basis: calc((100% - 30px) / 2);
+    }
+
+    &__icon-wrapper {
+      text-align: center;
+      background-color: $col-bg-alt-lightgray;
+      border-radius: 4px;
+      padding: 25px 0;
+    }
+
+    &__term {
+      color: $col-text-darkgray;
+      font-size: 14px;
+      font-weight: 700;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+      line-height: 1.14em;
+      text-align: center;
+      letter-spacing: 0.03em;
+    }
+
+    &__description {
+      color: $col-text-gray;
+      font-size: 14px;
+      letter-spacing: 0.03em;
+      line-height: 1.71em;
+    }
   }
 }

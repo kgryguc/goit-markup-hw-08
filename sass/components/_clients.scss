@@ -26,3 +26,12 @@
     }
   }
 }
+
+@media (min-width: 768px) {
+  .our-clients {
+    &__item {
+      flex-basis: calc((100% - 60px) / 3);
+      padding: 15px 0;
+    }
+  }
+}

@@ -2,7 +2,8 @@
   background-color: $col-bg-default;
   padding: 60px 0;
 
-  &__wrapper {
+  &__wrapper,
+  &__contact-section {
     display: flex;
     justify-content: space-between;
     flex-direction: column;
@@ -106,6 +107,21 @@
       top: 15px;
       left: 16px;
       color: $col-text-white-alfa60;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .footer {
+    &__contact-section {
+      flex-direction: row;
+      justify-content: space-between;
+      text-align: center;
+      gap: 144px;
+    }
+
+    &__newsletter-input {
+      width: 450px;
     }
   }
 }
