@@ -118,7 +118,7 @@
     &__contact-section {
       flex-direction: row;
       text-align: center;
-      gap: 144px;
+      justify-content: space-around;
     }
 
     &__newsletter-input {
