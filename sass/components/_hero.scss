@@ -2,7 +2,7 @@
   background-image: linear-gradient($col-bg-default-alfa40, $col-bg-default-alfa40),
     url('../images/hero-background-480.jpg');
   background-color: $col-bg-default;
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 
@@ -13,6 +13,7 @@
     gap: 30px;
   }
   &__header {
+    max-width: 365px;
     color: $col-text-white;
     font-size: 26px;
     font-weight: 900;
