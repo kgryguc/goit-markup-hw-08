@@ -3,21 +3,18 @@
 
   &__list {
     display: flex;
+    flex-direction: column;
     gap: 30px;
-    flex-wrap: wrap;
     justify-content: center;
   }
 
-  &__member {
-    flex-basis: calc((100% - 90px) / 2);
-  }
   &__card {
     background-color: $col-bg-alt-white;
   }
 
   &__image {
     display: block;
-    width: 100%;
+    max-width: 100%;
   }
 
   &__caption {
@@ -62,16 +59,27 @@
   }
 }
 
+// TABLET STYLES
+
+@media screen and (min-width: 768px) {
+  .team {
+    &__list {
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+
+    &__member {
+      flex-basis: calc((100% - 90px) / 2);
+    }
+  }
+}
+
 // DESKTOP STYLES
 
 @media (min-width: 1200px) {
   .team {
-    background-color: $col-bg-alt-lightgray;
-
     &__list {
       flex-wrap: nowrap;
-      gap: 0;
-      justify-content: space-between;
     }
 
     &__member {
