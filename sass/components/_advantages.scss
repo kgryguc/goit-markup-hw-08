@@ -23,7 +23,7 @@
     text-transform: uppercase;
     margin-bottom: 10px;
     line-height: 1.14em;
-    text-align: left;
+    text-align: center;
     letter-spacing: 0.03em;
   }
 
@@ -47,6 +47,10 @@
 
     &__item {
       flex-basis: calc((100% - 30px) / 2);
+    }
+
+    &__term {
+      text-align: left;
     }
   }
 }

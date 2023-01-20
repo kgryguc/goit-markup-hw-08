@@ -70,7 +70,12 @@
 
     &__list {
       flex-wrap: nowrap;
-      justify-content: flex-start;
+      gap: 0;
+      justify-content: space-between;
+    }
+
+    &__member {
+      flex-basis: calc((100% - 90px) / 4);
     }
   }
 }
